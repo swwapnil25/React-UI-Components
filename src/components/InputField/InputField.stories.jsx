@@ -1,4 +1,3 @@
-// src/components/InputField/InputField.stories.jsx
 import { useState } from "react";
 import InputField from "./InputField";
 
@@ -9,7 +8,7 @@ export default {
   parameters: { layout: "centered" },
   args: {
     label: "Email",
-    placeholder: "you@example.com",
+    placeholder: "Email",
     variant: "outlined",
     size: "md",
     helperText: "We will never share your email.",
@@ -19,6 +18,7 @@ export default {
     size: { control: "radio", options: ["sm", "md", "lg"] },
   },
 };
+
 
 export const Basic = (args) => {
   const [val, setVal] = useState("");
@@ -45,6 +45,7 @@ export const Password = () => {
 
 export const Loading = () => <InputField label="Search" placeholder="Loading..." loading disabled />;
 
+
 export const Clearable = () => {
   const [val, setVal] = useState("Hello");
   return (
@@ -55,5 +56,15 @@ export const Clearable = () => {
       clearable
       onChange={(e) => setVal(e.target.value)}
     />
+  );
+};
+
+//  Dark mode
+export const DarkMode = (args) => {
+  const [val, setVal] = useState("");
+  return (
+    <div className="dark bg-gray-900 p-6 min-h-screen">
+      <InputField {...args} value={val} onChange={(e) => setVal(e.target.value)} />
+    </div>
   );
 };

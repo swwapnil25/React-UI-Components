@@ -1,4 +1,4 @@
-// src/App.jsx
+
 import React, { useState } from "react";
 import InputField from "./components/InputField/InputField";
 import DataTable from "./components/DataTable/DataTable";
@@ -8,65 +8,72 @@ export default function App() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [search, setSearch] = useState("");
-
+  const [darkMode, setDarkMode] = useState(false);
   const data = [
-    { id: 1, name: "Alice", age: 28, email: "alice@example.com" },
-    { id: 2, name: "Bob", age: 35, email: "bob@example.com" },
-    { id: 3, name: "Carol", age: 23, email: "carol@example.com" },
+    { id: 1, name: "Swapnil", age: 28, email: "swapnil@gmail.com" },
+    { id: 2, name: "Nilesh", age: 35, email: "nilesh@gmail.com" },
+    { id: 3, name: "Rohit", age: 23, email: "rohit@gmail.com" },
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center p-6">
-      <div className="bg-white dark:bg-gray-800 shadow rounded-2xl p-8 w-full max-w-5xl grid md:grid-cols-2 gap-8">
-        {/* Left Side - Form Fields */}
-        <div className="space-y-6">
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
-            Component Demo
-          </h1>
+    <div className={darkMode ? "dark" : ""}>
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col items-center justify-center p-6">
+        
+        {/* Dark Mode Toggle Button */}
+        <button
+          onClick={() => setDarkMode(!darkMode)}
+          className="mb-6 px-4 py-2 rounded-lg bg-blue-600 text-white dark:bg-yellow-400 dark:text-black"
+        >
+        {darkMode ? "Light" : "Dark"} Mode
+        </button>
 
-          {/* Email Field */}
-          <InputField
-            label="Email"
-            placeholder="you@example.com"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            helperText="We'll never share your email."
-          />
+        <div className="bg-white dark:bg-gray-800 shadow rounded-2xl p-8 w-full max-w-5xl grid md:grid-cols-2 gap-8">
+      
+          <div className="space-y-6">
+            <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
+              React UI
+            </h1>
 
-          {/* Password Field */}
-          <InputField
-            label="Password"
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            showPasswordToggle
-          />
+            <InputField
+              label="Email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              helperText="We'll never share your email."
+            />
 
-          {/* Search Field */}
-          <InputField
-            label="Search"
-            placeholder="Search"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            clearable
-          />
+            {/* Password Field */}
+            <InputField
+              label="Password"
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              showPasswordToggle
+            />
 
-          {/* Invalid Example */}
-          <InputField
-            label="Invalid"
-            placeholder="Invalid"
-            invalid
-            errorMessage="This field is required"
-          />
-        </div>
+            {/* Search Field */}
+            <InputField
+              label="Search"
+              placeholder="Search"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              clearable
+            />
 
-        {/* Right Side - Data Table */}
-        <div>
-          <DataTable 
-            data={data} 
-            columns={["name", "age", "email"]} 
-          />
+            {/* Invalid Example */}
+            <InputField
+              label="Invalid"
+              placeholder=""
+              invalid
+              errorMessage="This field is required"
+            />
+          </div>
+
+          {/* Right Side - Data Table */}
+          <div className="mt-[118px]">
+            <DataTable data={data} columns={["name", "age", "email"]} />
+          </div>
         </div>
       </div>
     </div>

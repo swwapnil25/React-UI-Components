@@ -2,6 +2,7 @@
 import React, { forwardRef, useId, useState } from "react";
 import PropTypes from "prop-types";
 import { cn } from "../../lib/cn";
+import { Eye, EyeOff } from "lucide-react";
 
 const InputField = forwardRef(
   (
@@ -38,8 +39,10 @@ const InputField = forwardRef(
     };
 
     const variantClasses = {
-      outlined: "border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900",
-      filled: "bg-gray-100 dark:bg-gray-800 border border-transparent",
+      outlined:
+        "border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900",
+      filled:
+        "bg-gray-100 dark:bg-gray-800 border border-transparent",
       ghost: "bg-transparent border border-transparent",
     };
 
@@ -67,6 +70,8 @@ const InputField = forwardRef(
             aria-invalid={invalid || !!errorMessage}
             className={cn(
               "w-full rounded-md focus:outline-none focus:ring-2",
+              "text-gray-900 dark:text-gray-100", 
+              "placeholder-gray-400 dark:placeholder-gray-300", 
               sizeClasses[size],
               variantClasses[variant],
               errorMessage ? "border-red-500 focus:ring-red-400" : "focus:ring-blue-400",
@@ -75,25 +80,31 @@ const InputField = forwardRef(
             {...inputProps}
           />
 
+      
           {!loading && clearable && value && !disabled && (
             <button
               type="button"
               onClick={() => onChange?.({ target: { value: "" } })}
-              className="absolute inset-y-0 right-2.5 my-auto inline-flex h-7 w-7 items-center justify-center rounded-full border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="absolute inset-y-0 right-2.5 my-auto inline-flex h-7 w-7 items-center justify-center rounded-full border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300"
               aria-label="Clear input"
             >
               ×
             </button>
           )}
 
+        
           {type === "password" && showPasswordToggle && !loading && (
             <button
               type="button"
               onClick={() => setShowPw((s) => !s)}
-              className="absolute inset-y-0 right-2.5 my-auto inline-flex h-7 w-7 items-center justify-center rounded-full border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="absolute inset-y-0 right-2.5 my-auto inline-flex h-7 w-7 items-center justify-center rounded-full border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300"
               aria-label={showPw ? "Hide password" : "Show password"}
             >
-              {showPw ? "🙈" : "👁️"}
+             {showPw ? (
+      <EyeOff className="h-4 w-4 text-gray-600 dark:text-gray-300" />
+    ) : (
+      <Eye className="h-4 w-4 text-gray-600 dark:text-gray-300" />
+    )}
             </button>
           )}
         </div>
@@ -103,7 +114,7 @@ const InputField = forwardRef(
             id={describedById}
             className={cn(
               "mt-1.5 text-xs",
-              errorMessage ? "text-red-600" : "text-gray-500 dark:text-gray-400"
+              errorMessage ? "text-red-600 dark:text-red-400" : "text-gray-500 dark:text-gray-400"
             )}
           >
             {errorMessage || helperText}

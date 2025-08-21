@@ -27,7 +27,7 @@ describe("DataTable", () => {
       { id: 2, name: "Alice", age: 25, email: "alice@example.com" },
     ];
     render(<DataTable data={multiData} columns={columns} />);
-    fireEvent.click(screen.getByText("Age")); // capitalized in component
+    fireEvent.click(screen.getByText("Age"));
     const rows = screen.getAllByRole("row");
     expect(rows[1]).toHaveTextContent("Alice");
   });
@@ -36,7 +36,7 @@ describe("DataTable", () => {
     const fn = vi.fn();
     render(<DataTable data={sampleData} columns={columns} onRowSelect={fn} />);
     const checkboxes = screen.getAllByRole("checkbox");
-    fireEvent.click(checkboxes[1]); // row checkbox (not header)
+    fireEvent.click(checkboxes[1]);
     expect(fn).toHaveBeenCalledWith(sampleData[0]);
   });
 });
