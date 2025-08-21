@@ -5,7 +5,7 @@ React UI Assignment
 A React + Vite project showcasing reusable UI components with Tailwind CSS, Storybook, and Chromatic deployment.
 This project demonstrates modern frontend practices such as dark mode support, accessibility, and automated testing.
 
----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🚀 Features
 
@@ -27,7 +27,7 @@ This project demonstrates modern frontend practices such as dark mode support, a
 
 🌗 Light & Dark theme previews
 
----------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🛠️ Installation & Setup
 
@@ -54,7 +54,7 @@ This project demonstrates modern frontend practices such as dark mode support, a
 
    npm run test
 
----------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 📦 Available Scripts
 
@@ -72,14 +72,14 @@ This project demonstrates modern frontend practices such as dark mode support, a
 
  npm run test → Run unit tests with Vitest
 
----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Live Demo Links
 - 🌐 React App (React on Vercel): https://react-ui-components-rouge.vercel.app/
 - 📚 Storybook (Storybook on Chromatic): https://68a706c98b437417293b22e0-ptacpdqvbx.chromatic.com/
 
 
----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🧩 Components
 🔹 InputField
@@ -113,14 +113,14 @@ Responsive and accessible
 Light & dark mode support
 
 
----------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🌙 Dark Mode
 
 This project supports dark mode via Tailwind’s dark: classes.
 Storybook includes both Light and Dark mode stories for each component.
 
----------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 🧪 Testing
 
@@ -134,7 +134,7 @@ Run tests:
 
 npm run test
 
----------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 📝 Approach
 
@@ -162,21 +162,25 @@ npm run test
 
    Ensures form inputs and table sorting work as expected.
 
----------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Screenshots
-
-Light Mode
-<img width="1366" height="768" alt="Screenshot (23)" src="https://github.com/user-attachments/assets/8621400a-fe23-48d7-9539-82912030a4ab" />
-
 
 Dark Mode
 <img width="1366" height="768" alt="Screenshot (21)" src="https://github.com/user-attachments/assets/8bbb2054-bad2-4b50-891a-cc867c27e271" />
 
+Light Mode
+<img width="1366" height="768" alt="Screenshot (22)" src="https://github.com/user-attachments/assets/15d92cc2-ca2c-461c-a1d3-46f99a63e7da" />
 
+<img width="1366" height="768" alt="Screenshot (24)" src="https://github.com/user-attachments/assets/bac97543-72fe-4a83-9a57-81ee25760dd0" />
 
+<img width="1366" height="768" alt="Screenshot (25)" src="https://github.com/user-attachments/assets/925e111b-54ef-4eac-b6bd-5960815703bd" />
 
----------------------------------------------------------------------------------------------
+<img width="1366" height="768" alt="Screenshot (26)" src="https://github.com/user-attachments/assets/a5c43029-d36e-4d09-97fe-94daaf18ec81" />
+
+<img width="1366" height="768" alt="Screenshot (27)" src="https://github.com/user-attachments/assets/647d2cbf-93cf-4828-9b0a-3d501ba9fb29" />
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 👨‍💻 Author
 
  Swapnil Thorat
