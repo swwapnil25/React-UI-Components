@@ -163,6 +163,20 @@ npm run test
    Ensures form inputs and table sorting work as expected.
 
 ---------------------------------------------------------------------------------------------
+
+Screenshots
+
+Light Mode
+<img width="1366" height="768" alt="Screenshot (23)" src="https://github.com/user-attachments/assets/8621400a-fe23-48d7-9539-82912030a4ab" />
+
+
+Dark Mode
+<img width="1366" height="768" alt="Screenshot (21)" src="https://github.com/user-attachments/assets/8bbb2054-bad2-4b50-891a-cc867c27e271" />
+
+
+
+
+---------------------------------------------------------------------------------------------
 👨‍💻 Author
 
  Swapnil Thorat
