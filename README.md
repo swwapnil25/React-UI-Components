@@ -1,6 +1,6 @@
 # React UI Assignment (JS + Tailwind + Storybook)
 
-## React UI Assignment
+React UI Assignment
 
 A React + Vite project showcasing reusable UI components with Tailwind CSS, Storybook, and Chromatic deployment.
 This project demonstrates modern frontend practices such as dark mode support, accessibility, and automated testing.
@@ -19,9 +19,9 @@ This project demonstrates modern frontend practices such as dark mode support, a
 
 🧩 Reusable Components:
 
-# InputField → email, password, search, invalid, clearable states
+ InputField → email, password, search, invalid, clearable states
 
-# DataTable → sortable, responsive, dark mode support
+ DataTable → sortable, responsive, dark mode support
 
 ✅ Vitest + React Testing Library for unit tests
 
@@ -58,19 +58,19 @@ This project demonstrates modern frontend practices such as dark mode support, a
 
 📦 Available Scripts
 
-# npm run dev → Start Vite dev server
+ npm run dev → Start Vite dev server
 
-# npm run build → Build production bundle
+ npm run build → Build production bundle
 
-# npm run preview → Preview production build
+ npm run preview → Preview production build
 
-# npm run storybook → Start Storybook locally
+ npm run storybook → Start Storybook locally
 
-# npm run build-storybook → Build Storybook for deployment
+ npm run build-storybook → Build Storybook for deployment
 
-# npm run chromatic → Publish Storybook to Chromatic
+ npm run chromatic → Publish Storybook to Chromatic
 
-# npm run test → Run unit tests with Vitest
+ npm run test → Run unit tests with Vitest
 
 ---------------------------------------------------------------------------------------------
 
@@ -87,7 +87,7 @@ Supports outlined, filled, and ghost variants
 
 Sizes: sm, md, lg
 
-# Features:
+ Features:
 
 Email input with helper text
 
@@ -125,9 +125,9 @@ Storybook includes both Light and Dark mode stories for each component.
 
 We use Vitest + React Testing Library:
 
-# InputField tests cover clear button, password toggle, error states
+ InputField tests cover clear button, password toggle, error states
 
-# DataTable tests cover sorting, loading, and empty states
+ DataTable tests cover sorting, loading, and empty states
 
 Run tests:
 
@@ -139,14 +139,14 @@ npm run test
 
 This project uses Chromatic for Storybook hosting.
 
-# Deploy with:
+ Deploy with:
 
-npm run chromatic
+ npm run chromatic
 
 ---------------------------------------------------------------------------------------------
 
 👨‍💻 Author
 
-# Swapnil Thorat
-## Frontend Developer | Full Stack Enthusiast
-### swapnilthorat2560@gmail.com
+ Swapnil Thorat
+ Frontend Developer | Full Stack Enthusiast
+ swapnilthorat2560@gmail.com
