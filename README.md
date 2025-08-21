@@ -74,9 +74,10 @@ This project demonstrates modern frontend practices such as dark mode support, a
 
 ---------------------------------------------------------------------------------------------
 
-🌐 Live Demo (Storybook on Chromatic)
+## Live Demo Links
+- 🌐 React App (React on Vercel): https://react-ui-components-rouge.vercel.app/
+- 📚 Storybook (Storybook on Chromatic): https://68a706c98b437417293b22e0-ptacpdqvbx.chromatic.com/
 
-👉 View Published Storybook
 
 ---------------------------------------------------------------------------------------------
 
@@ -135,16 +136,33 @@ npm run test
 
 ---------------------------------------------------------------------------------------------
 
-🚀 Deployment (Storybook)
+📝 Approach
 
-This project uses Chromatic for Storybook hosting.
+1. Component-Driven Development
 
- Deploy with:
+   Built InputField and DataTable as reusable components.
 
- npm run chromatic
+   Added props for customization (clearable input, password toggle, sorting).
+
+2. Theming (Light & Dark Mode)
+
+   Used Tailwind’s dark: variants for dynamic theming.
+
+   Storybook stories demonstrate both light and dark themes.
+
+3. Storybook + Chromatic
+
+   Storybook documents and tests UI in isolation.
+
+   Chromatic auto-deploys Storybook for easy sharing with reviewers.
+
+4. Testing
+
+   Added unit tests with Vitest + React Testing Library.
+
+   Ensures form inputs and table sorting work as expected.
 
 ---------------------------------------------------------------------------------------------
-
 👨‍💻 Author
 
  Swapnil Thorat
